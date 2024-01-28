@@ -1,0 +1,142 @@
+<script>
+    function openMember(namamember) {
+     var i;
+     var x = document.getElementsByClassName("member");
+     for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none"; 
+     }
+     document.getElementById(namamember).style.display = "block"; 
+    }
+    </script>
+<html>
+<title>Mutiara | Tugas 14</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<body style=" background-size: cover;" class="w3-pale-red">
+ <img src="css/fix.png" style="width:100%">
+
+ 
+<div class="w3-bar w3-black w3-center w3-mobile w3-container">
+    <button class="w3-bar-item w3-button w3-round-large w3-hover-pale-red" onclick="openMember('Tentang')" >TENTANG</button>
+    <button class="w3-bar-item w3-button w3-round-large w3-hover-pale-red" onclick="openMember('Anggota')">ANGGOTA</button>
+    <button class="w3-bar-item w3-button w3-round-large w3-hover-pale-red" onclick="openMember('Game')">GAME</button>
+    <button class="w3-bar-item w3-button w3-round-large w3-right w3-hover-pale-red" onclick="openMember('Profil')"><b>PROFIL</b></button>
+    <div class="w3-dropdown-hover">
+        <button class="w3-button w3-round-large w3-hover-pale-red">ALBUM</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <button class="w3-bar-item w3-button w3-hover-pale-red" onclick="openMember('Album')"><b>The Album</b></button>
+                <button class="w3-bar-item w3-button w3-hover-pale-red" onclick="openMember('Born')"><b>Born Pink</b></button>             
+            </div>
+    </div>
+</div>
+<div id="Tentang" class="w3-container member w3-center" style="display:none">
+    <h2 class="w3-animate-opacity"><b>TENTANG</b></h2><br>
+    <div class="w3-container w3-animate-zoom">
+        <img src="css/2.jpg" class="w3-round" style="width:50%">
+        <div class="w3-container w3-center">
+            <h5><p>Blackpink merupakan grup vokal wanita Korea yang memiliki lagu dengan posisi tertinggi di Billboard Hot 100, 
+                berada di nomor 55 dengan "Ddu-Du Ddu-Du" dan di Billboard 200, berada di nomor 40 dengan EP berjudul Square Up. 
+                Blackpink merupakan grup pop Korea perempuan pertama dan satu-satunya yang memasuki dan memuncaki Emerging Artists Billboard. 
+                Mereka juga merupakan grup pop Korea Selatan wanita pertama yang mempunyai empat lagu di Billboard World Digital Song Sales.</b></p></h4>
+    </div>
+    </div>
+</div>
+
+<div id="Anggota" class="w3-container member w3-center" style="display:none">
+    <h2 class="w3-animate-opacity"><b>ANGGOTA</b></h2><br>
+    <div class="w3-container ">
+        <div class="w3-row-padding w3-container w3-animate-top">
+            <div class="w3-col w3-center" style="width:50%">
+                <img src="css/rose.jpg" style="width:60%" class=" w3-round">
+                <h4>Park Chaeyoung</h4>
+            </div>
+            <div class="w3-col w3-center" style="width:50%">
+                <img src="css/jennie.jpg" style="width:60%" class=" w3-round">
+                <h4>Kim Jennie</h4>
+            </div>
+        </div>
+        <br>
+        <div class="w3-row-padding w3-container w3-animate-bottom">
+            <div class="w3-col w3-center" style="width:50%">
+                <img src="css/jisoo.jpg" style="width:60%" class=" w3-round">
+                <h4>Kim Jisoo</h4>
+            </div>
+            <div class="w3-col w3-center" style="width:50%">
+                <img src="css/lisa.jpg" style="width:60%" class=" w3-round">
+                <h4>Lalisa Manoban</h4>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="Game" class="w3-container member w3-center" style="display:none">
+    <h2 class="w3-animate-opacity"><b>GAME</b></h2><br>
+    <div class="w3-container ">
+        <div class="w3-row-padding w3-container">
+            <div class="w3-col w3-center w3-animate-left" style="width:50%">
+                <a href="https://www.pubgmobile.com/en/event/BLACKPINK2022/">
+                    <img src="css/game (2).jpg" style="width:70%" class=" w3-round"></a>
+                <h4>BLACKPINK X PUBG</h4>
+            </div>
+            <div class="w3-col w3-center w3-animate-right" style="width:50%">
+                <a href="https://play.google.com/store/apps/details?id=com.takeonecompany.bptg1&hl=en_US&pli=1">
+                    <img src="css/game (1).jpg" style="width:70%" class=" w3-round"></a>
+                <h4>BLACKPINK THE GAME</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Album" class="w3-container member  w3-center" style="display:none">
+    <h2 class="w3-animate-opacity"><b>THE ALBUM</b></h2>
+    <img src="css/cd (1).png" class="w3-spin" style="width: 30%;">
+    <div class="w3-container w3-animate-opacity">
+        <p><h5>The Album menghasilkan tiga buah singel. "How You Like That" dirilis sebagai singel pertama pada tanggal 26 Juni 2020.
+            "Ice Cream" dengan penyanyi asal Amerika Selena Gomez yang dirilis sebagai singel kedua pada tanggal 28 Agustus 2020.
+            "Lovesick Girls" disiapkan untuk rilis sebagai singel ketiga bersamaan dengan rilisnya album pada tanggal 2 Oktober 2020.
+            Pada tanggal 4 September 2020, YG Entertainment mengumumkan bahwa The Album telah melewati 800.000 
+            pre-order dalam waktu hanya 6 hari setelah periode pre-order dimulai. Menurut perusahaan, jumlah pre-order mencapai lebih dari 530.000 kopi di Korea Selatan, dan pre-order gabungan dari Amerika Serikat dan Eropa berjumlah sekitar 270.000 unit.
+            Pada 2 Oktober, The Album telah melampaui satu juta pemesanan pre-order, menjadikannya album pertama oleh sebuah grup vokal wanita Korea Selatan yang melewati angka tersebut. 
+            Dari jumlah satu juta tersebut, 670.000 pemesanan pre-order berasal dari Korea, dengan 340.000 buah berasal dari AS dan Eropa.
+            Sementara untuk penjualan di Amerika Serikat dengan penjualan album fisik murni telah terjual 220.000 salinan album yang merupakan rekor penjualan tertinggi untuk album artis wanita korea. 
+            Blackpink juga satu satu nya artis wanita yang mampu menyentuh angka 1 juta salinan album di Korea tahun 2020 bersamaan dengan BTS, Seventeen, NCT, dan Baekhyun. Mengukuhkan mereka sebagai pemimpin untuk penjualan album fisik untuk artis kpop wanita.
+        </p></h5>
+    </div>
+    
+</div>
+
+
+<div id="Born" class="w3-container member  w3-center" style="display:none">
+    <h2 class="w3-animate-opacity"><b>BORN PINK</b></h2>
+    <img src="css/cd (2).png" class="w3-spin" style="width: 30%;">
+    <div class="w3-container w3-animate-opacity">
+    <h5><p>Born Pink adalah album studio kedua dari girl grup Korea Selatan Blackpink. 
+        Dirilis pada 16 September 2022 melalui YG Entertainment dan Interscope. Ini menandai rekor full-length pertama grup sejak The Album pada tahun 2020. 
+        Produksi album ditangani oleh berbagai produser termasuk Teddy Sinclair, Willy Sinclair, Bekuh Boom, R. Tee, Kush dan Teddy Park. 
+        Blackpink menganggap Born Pink sebagai "esensi" grup, mengambil inspirasi dari suara hip-hop di seluruh album dan menggabungkan berbagai genre.
+        Born Pink yang kental dalam bahasa Inggris sebagian besar berasal dari pop, hip-hop, rock, dan EDM, 
+        dengan melodi yang ditandai dengan produksi yang lebih uptempo dibandingkan pendahulunya The Album. 
+        Lagu-lagunya menggabungkan gaya eklektik mulai dari disko dan bubblegum pop hingga pop-rock dan stadium rock. 
+        Secara lirik, album ini membahas tema cinta, kepercayaan diri, dorongan diri, menghadapi ketenaran dan pencela, dan banyak lagi. Anggota Blackpink Jisoo dan Rosé ikut menulis lagu keempat "Yeah Yeah Yeah".</p></h4>
+</div>
+</div>
+
+<div id="Profil" class="w3-container member w3-animate-opacity w3-center" style="display:none">
+    <h2 class="w3-animate-opacity"><b>PROFIL SAYA</b></h2><br>
+    <div class="w3-container w3-center w3-animate-fading">
+        <img src="css/hu.jpeg" class="w3-circle" style="width: 25%;">
+        <h3><b>Mutiara Annuur</b>
+        <h3><b>10123177</b>
+        <h3><b>IF - 5</b><br>
+</div>
+</div>
+<div class="w3-container w3-center">
+    <a href="https://www.instagram.com/blackpinkofficial/?hl=id">
+        <img src="css/w3.png" style="width: 60%;" class="w3-round">
+    </a>
+</div>
+
+
+</body>
+</html>
